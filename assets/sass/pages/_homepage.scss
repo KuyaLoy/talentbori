@@ -1,0 +1,53 @@
+@use '../utils' as u;
+
+#Home {
+    background-image: url('../image/background/main-background.png');
+    background-position: top;
+    background-size: cover;
+
+    h1 {
+        font-size: u.rem(60);
+        color: var(--textColor);
+    }
+
+    main {
+        section {
+            
+            article {
+                text-align: center;
+                justify-content: center;
+                position: relative;
+
+                &.prolog {
+                    padding: 50px 20px;
+                    min-height: 100vh;
+                    p {
+                        font-size: u.rem(70);
+                        width: 100%;
+                        max-width: u.rem(1186);
+                        margin: 0 auto;
+                        margin-top: u.rem(70);
+                        color: var(--textColor);
+                        font-family: 'Chalkboard';
+                    }
+
+                    picture.mic {
+                        height: 1200px;
+                        width: 1200px;
+                        position: absolute;
+                        left: -335px;
+                        top: -300px;
+                        z-index: -1;
+                        opacity: 0.5;
+
+                        img {
+                        
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+} 
+

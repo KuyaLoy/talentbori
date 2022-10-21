@@ -1,0 +1,47 @@
+.landingpage {
+    background-color: hsl(270, 17%, 18%);
+
+    &__container {
+        min-height: 100vh;
+        text-align: center;
+        justify-content: center;
+
+        a {
+            color: var(--textColor);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Chalkboard';
+            
+            p {
+                transition: .5s ease;
+            }
+            p.text1 {
+                font-size: 145px;
+            }
+            p.text2 {
+                font-size: 55px;
+            }
+
+            &:hover {
+                color: var(--textColorHover);
+                
+                p.text1 {
+                    font-size: 55px;
+                }
+                p.text2 {
+                    font-size: 100px;
+                }
+            }
+
+            // &:hover {
+            //     color: var(--textColorHover);
+            //     font-size: 55px;
+            //     line-height: normal;
+                
+            //     span {
+            //         font-size: 90px;
+            //     }
+            // }
+        }
+    }
+}

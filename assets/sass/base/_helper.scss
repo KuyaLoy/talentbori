@@ -1,0 +1,49 @@
+@use '../utils' as u;
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.sec-title {
+    font-size: u.rem(75);
+    color: var(--textTitleColor);
+    text-shadow: var(--textTitlehadow);
+    font-family: 'PyeongChangPeace-Bold';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--textTitleBorder);
+
+    &.withLight {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before , &::after {
+            height: 50px;
+            width: 50px;
+            background: white;
+            content: '';
+            position: absolute;
+            border-radius: 100%;
+        }
+        &::before {
+            left: -70px;
+        }
+        &::after {
+            right: -70px;
+        }
+    }
+}

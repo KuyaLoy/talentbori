@@ -1,0 +1,111 @@
+@use '../utils' as u;
+
+/** icon bar **/
+.extra-button-cont {
+    @include u.breakpoint-max(small) {
+        display: none;
+    }
+    .icon-bar {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        right: u.rem(30);
+        background: hsla(245, 97%, 13%, 0.589);
+        border-radius: u.rem(50);
+        z-index: 1;
+        padding-top: u.rem(20);
+        padding-bottom: u.rem(20);
+
+        a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: u.rem(20) u.rem(25);
+            text-decoration: none;
+
+            picture {
+                width: u.rem(35);
+                height: u.rem(35);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                img {
+                    transition: transform 100ms;
+                    height: auto;
+                    object-fit: cover;
+                    transition: .5s ease;
+
+                    &.mute {
+                        opacity: 0.2; 
+                    }
+                }
+            }
+
+            
+            &:nth-child(1) {
+                img {
+                    width: u.rem(63);
+                }
+            }
+            &:nth-child(2) {
+                img {
+                    width: u.rem(64);
+                }
+            }
+            &:nth-child(3) {
+                img {
+                    width: u.rem(54);
+                }
+            }
+            &:nth-child(4) {
+                img {
+                    width: u.rem(33);
+                }
+            }
+            &:nth-child(5) {
+                img {
+                    width: u.rem(79);
+                }
+            }
+            &:nth-child(6) {
+                img {
+                    width: u.rem(92);
+                }
+            }
+
+            span {
+                position: absolute;
+                display: none;
+                font-family: "DalseoDarling";
+                text-transform: uppercase;
+            }
+
+            &:not(:last-child) {
+
+                &:hover {
+                
+                    picture {
+                        img {
+                            //transform: scale(1.2);
+                            display: none;
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        color: var(--textColorWhite);
+                    }
+                }   
+            }                  
+        }
+
+        @include u.breakpoint-max(small) {
+            right: 0;
+            background: #00000050;
+            border-radius: u.rem(12) u.rem(0) u.rem(0) u.rem(12);
+        }
+    }
+}
+
