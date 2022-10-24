@@ -1,5 +1,6 @@
 .landingpage {
-    background-color: hsl(270, 17%, 18%);
+    //background-color: hsl(270, 17%, 18%);
+    background-image: url('../image/background/homeBg.jpg');
 
     &__container {
         min-height: 100vh;
@@ -32,16 +33,6 @@
                     font-size: 100px;
                 }
             }
-
-            // &:hover {
-            //     color: var(--textColorHover);
-            //     font-size: 55px;
-            //     line-height: normal;
-                
-            //     span {
-            //         font-size: 90px;
-            //     }
-            // }
         }
     }
 }

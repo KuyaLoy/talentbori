@@ -1,115 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Talentbori | Homepage</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body id="Home">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Talentbori | Homepage</title>
+
+  <link rel="stylesheet" href="./assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body id="Home">
 
 
 
 
-    <header class="talentbori__header flex">
+  <header class="talentbori__header flex">
+    <picture>
+      <img src="./assets/image/header/header.png" alt="talentbori image" class="headerImg">
+      <img src="./assets/image/header/header-hover.png" alt="talentbori image" class="headerImgHover">
+    </picture>
+  </header>
 
-      <h1>Header Page</h1>
-
-    </header>
 
 
+  <main>
+    <section>
+      <article class="flex-wrap flex-column prolog" id="Prolog">
+        <h2 class="sec-title withLight">prolog</h2>
+        <p>We Support Everyone Following Their Dream Don’t Stop Believing In Yourself<br>FROM. WORI TEAMZ</p>
 
-    <main>
-      <section>
-        <article class="flex-wrap flex-column prolog" id="Prolog">
-          <h2 class="sec-title withLight">Prolog Page</h2>
-          <p>We Support Everyone Following Their Dream Don’t Stop Believing In Yourself FROM. WORI TEAMZ</p>
+        <picture class="mic">
+          <img src="./assets/image/article/prolog/pic1.png" alt="mic">
+        </picture>
 
-          <picture>
-            <img src="./assets/image/article/prolog/pic2.png" alt="makeup">
+        <picture class="makeup">
+          <img src="./assets/image/article/prolog/pic2.png" alt="makeup">
+        </picture>
+
+      </article>
+
+      <article class="flex-wrap flex-column story" id="Story">
+        <h2 class="sec-title special">Story</h2>
+
+        <div class="mirror-wrapper">
+          <picture class="girl">
+            <img src="./assets/image/article/story/girl.png" alt="girl">
           </picture>
+          <picture class="mirror">
+            <img src="./assets/image/article/story/mirror.png" alt="girl">
+            <lottie-player src="./assets/image/article/story/lottiefile.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player></picture>
+        </div>
 
+        <div class="description">
+          <p class="text-1">BORI Is An Old-Fashioned Small-Town Girl Who Wants To Be A Celebrity.</p>
+          <p class="text-2">Aiming To Be A Huge Success In The Entertainment Industry, BORI Is Excited About Upcoming
+            Auditions.</p>
+          <p class="text-3">BORI Suffers From Low Self-Esteem But Constantly Strives To Overcome This Issue.</p>
+          <p class="text-4">She Motivates Herself By Repeating The Positive Affirmation “You Can Do It” While
+            Visualizing What She Wants To Be.</p>
+          <p class="text-5">We Are Looking For Supporters Who Can Help BORI Achieve Her Dreams.</p>
+          <p class="text-6">You Can Help BORI Overcome Her Insecurities And Achieve Her Goals.</p>
+          <p class="text-7">All You Need To Do Is Acquire Your Very Own BORI Nfts.</p>
+          <p class="text-8">Become A Proud BORI NFT Owner And Support BORI In Her Incredible Journey Of Self-Empowerment
+          </p>
+        </div>
 
-          <picture class="mic">
-            <img src="./assets/image/article/prolog/pic1.png" alt="mic">
-          </picture>
+        <picture class="mic">
+          <img src="./assets/image/article/story/pic1.png" alt="mic retro">
+        </picture>
+      </article>
 
-        </article>
-        <article class="flex-wrap" id="Story">
-          <h2 class="sec-title withLight">Story Page</h2>
-        </article>
-        <article class="flex-wrap" id="Buy">
-          <h2 class="sec-title withLight">Buy Page</h2>
-        </article>
-        <article class="flex-wrap" id="Roadmap">
-          <h2 class="sec-title withLight">Roadmap Page</h2>
-        </article>
-      </section>
-    </main>
+      <article class="flex-wrap flex-column roadmap" id="Roadmap">
+        <h2 class="sec-title withLight">Roadmap</h2>
 
+        <div class="wrapper-cont flex flex-wrap roadmap-cont">
+          <div class="flex-cont">
+            <div onmouseover="hoverContImage(1)" onmouseleave="hoverOutContImage(1)"
+              class="inside-cont flex flex-column flex-wrap">
+              <h3>10%</h3>
+              <p>lucky draw event</p>
+              <div class="hover-content hover-1">
+                <span>Join The Lucky Draw<br>Event To Win Special BORI NFT.<br>Five Lucky Winners Will Be Chossen To
+                  Receive A<br>Stunning BORI NFT!</span>
+              </div>
+            </div>
+            <div onmouseover="hoverContImage(3)" onmouseleave="hoverOutContImage(2)"
+              class="inside-cont flex flex-column flex-wrap">
+              <h3>60%</h3>
+              <p>1) lucky draw event</p>
+              <p>or</p>
+              <p>2) "joining hands for self-growth" event</p>
 
+              <div class="hover-content hover-3">
+                <span>The BORI NFT Project,<br>
+                  We Aim To Help BORI Supporters Uncover<br>
+                  Their Talent And Achieve<br>
+                  Their Dreams Just Like BORI.<br>
+                  As Part Of Our Self-Improvement Initiative,<br>
+                  We Provide BORI NFT Holders With Coins As Rewards<br>
+                  For Achieving Their Goals.<br>
+                  Join Us On This Journey Of Self-Growth</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-cont">
 
-    <div class="extra-button-cont">
-      <div class="icon-bar">
-        <a href="#Home">
-          <picture
-            ><img
-              src="./assets/image/nav/nav1.png"
-              alt="HOME"
-          /></picture>
-          <span>HOME</span>
-        </a>
-        <a href="#Prolog">
-          <picture
-            ><img
-            src="./assets/image/nav/nav2.png"
-              alt="PROLOG"
-          /></picture>
-          <span>PROLOG</span>
-        </a>
-        <a href="#Story">
-          <picture
-            ><img
-            src="./assets/image/nav/nav3.png"
-              alt="STORY"
-          /></picture>
-          <span>STORY</span>
-        </a>
-        <a href="#Buy">
-          <picture
-            ><img
-            src="./assets/image/nav/nav4.png"
-              alt="BUY"
-          /></picture>
-          <span>BUY</span>
-        </a>
-        <a href="#Roadmap">
-          <picture
-            ><img
-            src="./assets/image/nav/nav5.png"
-              alt="ROADMAP"
-          /></picture>
-          <span>ROADMAP</span>
-        </a>
-        <a href="javascript:;" onclick="togglePlay()">
-            <picture
-              ><img
-              src="./assets/image/nav/nav6.png"
-                alt="AUDIO"
-            /></picture>
-          </a>
-      </div>
+            <picture>
+              <img src="./assets/image/article/roadmap/pic1.jpg" alt="" class="pic1">
+              <img src="./assets/image/article/roadmap/pic1-1.jpg" alt="" class="pic1-1">
+              <img src="./assets/image/article/roadmap/pic1-2.jpg" alt="" class="pic1-2">
+              <img src="./assets/image/article/roadmap/pic1-3.jpg" alt="" class="pic1-3">
+              <img src="./assets/image/article/roadmap/pic1-4.jpg" alt="" class="pic1-4">
+              <img src="./assets/image/article/roadmap/pic1-5.jpg" alt="" class="pic1-5">
+            </picture>
+
+            <div onmouseover="hoverContImage(5)" onmouseleave="hoverOutContImage(5)"
+              class="inside-cont flex flex-column flex-wrap">
+              <h3>100%</h3>
+              <p>bori's debut party</p>
+
+              <div class="hover-content hover-5">
+                <span>Decked Up And Excited, BORI Is All Set To Make Her Glamorous Debut On The Red Carpet.<br>Join Us
+                  In Celebrating BORI'S Much-Awaited Debut At The Premiere Party!</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="flex-cont">
+            <div onmouseover="hoverContImage(2)" onmouseleave="hoverOutContImage(3)"
+              class="inside-cont flex flex-column flex-wrap">
+              <h3>30%</h3>
+              <p>donation</p>
+              <div class="hover-content hover-2">
+                <span>The BORI NFT Project<br>
+                  Will Be Donating 30%<br>
+                  Of The BORI NFT Sales To<br>
+                  Women For Afghan<br>
+                  Women (WAW),<br>
+                  A Grassroots Civil Society<br>
+                  Organization<br>
+                  Dedicated To Protecting<br>
+                  And Promoting<br>
+                  The Rights Of Disenfranchised<br>
+                  Afghan Women/span><br>
+              </div>
+            </div>
+            <div onmouseover="hoverContImage(4)" onmouseleave="hoverOutContImage(4)"
+              class="inside-cont flex flex-column flex-wrap">
+              <h3>80%</h3>
+              <p>roulette event</p>
+              <div class="hover-content hover-4">
+                <span>Take Part In Our Fascinating<br>
+                  Roulette Event On The Website.<br>
+                  Don’t Miss Out On This<br>
+                  Incredible Opportunity!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="flex-wrap buy" id="Buy">
+        <div class="wrapper-cont-fluid flex flex-column buy-cont">
+          <h3>A Collection Of 10,000 NFT</h3>
+          <div class="test">
+            <a href="#!">TALENTBORI</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-wrap showcase" id="Showcase" style="margin-top: 0;">
+        
+        <div class="owl-carousel showcase-carousel">
+          <div>
+            <img src="./assets/image/article/roadmap/pic1.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/image/article/roadmap/pic1-1.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/image/article/roadmap/pic1-2.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/image/article/roadmap/pic1-3.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/image/article/roadmap/pic1-4.jpg" alt="">
+          </div>
+          <div>
+            <img src="./assets/image/article/roadmap/pic1-5.jpg" alt="">
+          </div>
+        </div>
+
+      </article>
+      
+    </section>
+  </main>
+
+  <footer class="flex-wrap">
+    <div class="wrapper-cont-fluid footer-wrapper flex-wrap flex-column">
+      <picture>
+        <img src="./assets/image/footer/talentbori-logo.png" alt="Talent Bori Logo">
+      </picture>
+
+      <div class="copyright-marquee">
+        <div class="track">
+          <div class="content">@ ART BY JING & SALLY & ARTHUR @ DESIGN BY CHRIS & KEVIN & CHRISTIN @ PRODUCT BY TYLER & KIM @ DIRECTOR BY ROREN & PIE @ 2022 WORI TEAMZ ALL RIGHTS RESERVED @ ART BY JING & SALLY & ARTHUR @ DESIGN BY CHRIS & KEVIN & CHRISTIN @ PRODUCT BY TYLER & KIM @ DIRECTOR BY ROREN & PIE @ 2022 WORI TEAMZ ALL RIGHTS RESERVED</div>
+        </div>
+      <div>
     </div>
-
-    <audio id="player" loop autoplay>
-      <source src="./assets/audio/main-sound.mp3" type="audio/mp3" />
-      <source src="./assets/audio/main-sound.mp3" type="audio/org" />
-    </audio>
+  </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
 
-  </body>
+  <div class="extra-button-cont">
+    <div class="icon-bar">
+      <a href="#Home">
+        <picture><img src="./assets/image/nav/nav1.png" alt="HOME" /></picture>
+        <span>HOME</span>
+      </a>
+      <a href="#Prolog">
+        <picture><img src="./assets/image/nav/nav2.png" alt="PROLOG" /></picture>
+        <span>PROLOG</span>
+      </a>
+      <a href="#Story">
+        <picture><img src="./assets/image/nav/nav3.png" alt="STORY" /></picture>
+        <span>STORY</span>
+      </a>
+      <a href="#Roadmap">
+        <picture><img src="./assets/image/nav/nav5.png" alt="ROADMAP" /></picture>
+        <span>ROADMAP</span>
+      </a>
+      <a href="#Buy">
+        <picture><img src="./assets/image/nav/nav4.png" alt="BUY" /></picture>
+        <span>BUY</span>
+      </a>
+      <a href="javascript:;" onclick="togglePlay()">
+        <picture><img src="./assets/image/nav/nav6.png" alt="AUDIO" /></picture>
+      </a>
+    </div>
+  </div>
+
+  <audio id="player" loop autoplay>
+    <source src="./assets/audio/main-sound.mp3" type="audio/mp3" />
+    <source src="./assets/audio/main-sound.mp3" type="audio/org" />
+  </audio>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+      $(".showcase-carousel").owlCarousel({
+        rtl: true,
+        loop: true,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 3000,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: false,
+        responsive: {
+        0: {
+          items: 1.5,
+        },
+        600: {
+          items: 2.5,
+          margin: 10,
+        },
+        1000: {
+          items: 4,
+          margin: 20,
+        }
+      }
+      });
+    });
+  </script>
+</body>
+
 </html>

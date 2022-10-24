@@ -1,7 +1,7 @@
 @use '../utils' as u;
 
 #Home {
-    background-image: url('../image/background/main-background.png');
+    background-image: url('../image/background/mainBg.jpg');
     background-position: top;
     background-size: cover;
 
@@ -14,37 +14,304 @@
         section {
             
             article {
+
+                &:not(.buy) {
+                    scroll-margin-top: u.rem(100);
+                }
                 text-align: center;
                 justify-content: center;
                 position: relative;
+                margin-top: u.rem(200);
 
                 &.prolog {
-                    padding: 50px 20px;
+                    padding: u.rem(50) u.rem(20);
                     min-height: 100vh;
                     p {
-                        font-size: u.rem(70);
+                        font-size: u.rem(60);
                         width: 100%;
-                        max-width: u.rem(1186);
+                        max-width: u.rem(1200);
                         margin: 0 auto;
-                        margin-top: u.rem(70);
+                        margin-top: u.rem(80);
                         color: var(--textColor);
                         font-family: 'Chalkboard';
+                        line-height: u.rem(100);
+                    }
+                    picture {
+                        mix-blend-mode: overlay;
                     }
 
                     picture.mic {
-                        height: 1200px;
-                        width: 1200px;
+                        height: u.rem(1200);
+                        width: u.rem(1200);
                         position: absolute;
-                        left: -335px;
-                        top: -300px;
+                        left: u.rem(-335);
+                        top: 0;
                         z-index: -1;
-                        opacity: 0.5;
-
-                        img {
-                        
-                        }
                     }
 
+                    picture.makeup {
+                        margin-top: u.rem(100);
+                    }
+
+                }
+                &.story {
+                    //padding-top: u.rem(500);
+                    margin-top: u.rem(0);
+                    .description {
+                        
+                        //margin-top: u.rem(100);
+
+                        p {
+                            color: var(--textColor);
+                            font-family: 'Chalkboard';
+                            font-size: u.rem(43);
+                            line-height: u.rem(60);
+                            margin: 0 auto;
+                            width: 100%;
+
+                            &.text-1 {
+                                max-width: u.rem(1300);
+                            }
+                            &.text-2 {
+                                max-width: u.rem(1100);
+                            }
+                            &.text-3 {
+                                max-width: u.rem(1550);
+                            }
+                            &.text-4 {
+                                max-width: u.rem(1700);
+                            }
+                            &.text-5 {
+                                max-width: u.rem(1350);
+                            }
+                            &.text-6 {
+                                margin-top: u.rem(75);
+                                max-width: u.rem(1300);
+                            }
+                            &.text-7 {
+                                max-width: u.rem(1000);
+                            }
+                            &.text-8 {
+                                max-width: u.rem(1300);
+                            }
+                        }
+                    }
+                    
+                    picture.mic {
+                        margin-top: u.rem(100);
+                        mix-blend-mode: overlay;
+                    }
+
+                    .mirror-wrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: u.rem(1000);
+                        width: 100%;
+
+                        picture {
+
+                            display: block;
+                            position: absolute;
+                            top: 0;
+
+                            &.girl {
+                                z-index: 1;
+                                top: 150px;
+                                margin-left: -350px;
+
+                                img {
+                                    width: 550px;
+                                }
+                            }
+                            &.mirror { 
+                                z-index: 0;
+                                margin-right: -400px;
+
+                                img {
+                                    width: 600px;
+                                }
+                            
+                                lottie-player {
+                                    width: 470px !important;
+                                    height: 725px !important;
+                                    z-index: -1;
+                                    position: absolute;
+                                    top: 125px;
+                                    right: 80px;
+                                    clip-path: polygon(0 11%, 100% 0, 100% 100%, 1% 91%);
+                                    background-color: red;
+                                }
+                            }
+    
+                        }
+                    }
+                }
+
+                &.roadmap {
+                    .roadmap-cont {
+                        margin-top: u.rem(100);
+                        gap: 3rem;
+                        align-items: start;
+                        justify-content: center;
+
+                        .flex-cont {
+                            flex-basis: calc(33.33% - 2.5rem);
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+
+                            .inside-cont {
+                                min-height: u.rem(300);
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                position: relative;
+
+                                h3 {
+                                    color: var(--textTitleColor);
+                                    font-family: 'PyeongChangPeace-Bold';
+                                    font-size: u.rem(60);
+                                    margin-bottom: u.rem(20);
+                                    transition: .2s ease;
+                                }
+                                p {
+                                    font-family: 'Chalkboard';
+                                    font-size: u.rem(40); 
+                                    color: var(--textColorSecondary);
+                                    text-transform: uppercase;
+                                    transition: .2s ease;
+                                }
+
+                                .hover-content {
+                                    position: absolute;
+                                    background-color: hsla(322, 87%, 50%, 0.74);
+                                    z-index: 1;
+                                    border-radius: u.rem(16);
+                                    display: none;
+                                    
+                                    span {
+                                        font-size: u.rem(32);
+                                        font-family: 'Chalkboard';
+                                        color: var(--textColor);
+                                        padding: u.rem(20);
+                                        line-height: u.rem(50);
+                                    }
+                                }
+
+                                
+
+                                &:hover {
+                                    h3 {
+                                        font-size: u.rem(100);
+                                        color: var(--textTitleHover);
+                                    }
+
+                                    p {
+                                        font-size: u.rem(50); 
+                                    }
+
+                                    .hover-content {
+                                        display: block;
+                                        padding: 20px;
+
+                                        &.hover-1 {
+                                            top: u.rem(240);
+                                        }
+                                        &.hover-2 {
+                                            top: u.rem(250);
+                                        }
+                                        
+                                        &.hover-3 {
+                                            top: u.rem(380);
+                                        }
+                                        &.hover-4 {
+                                            top: u.rem(240);
+                                        }
+                                        &.hover-5 {
+                                            top: u.rem(240);
+                                            min-width: 1300px;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            picture {
+                                img {
+                                    transition: .2s ease;
+                                }
+                                img[class*='pic1-'] {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.buy {
+                    
+                    min-height: 100vh;
+                    background-image: url('../image/article/buy/background.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    .buy-cont {
+                        align-items: center;
+                        justify-content: center;
+
+                        h3 {
+                            font-size: u.rem(100);
+                            font-family: 'Chalkboard';
+                            color: white;
+                            
+                            margin-bottom: 80px;
+                        }
+                        .test {
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100px;
+                            
+                            a {
+                                font-size: u.rem(80);
+                                font-family: 'PyeongChangPeace-Bold';
+                                text-decoration: none;
+                                border: 5px solid black;
+                                color: var(--textColorHover);
+                                border-radius: u.rem(100);
+                                background-color: var(--textColor);
+                                padding: u.rem(30) u.rem(60);
+                                box-shadow: #000 -10px 10px 0px;
+                                display: block;
+                                margin-top: 10px;
+                                margin-right: 10px;
+                                transition: .3s ease;
+                                
+                                &:hover {
+                                    //box-shadow: #000 -20px 20px 0px;
+                                    
+                                    margin-top: 0px;
+                                    margin-right: 0px;
+                                    box-shadow: #000 -20px 20px 0px;
+                                    background-color: var(--textTitleColor);
+                                    
+
+                                    & ~ h3 {
+                                        margin-top: -20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.showcase {
+                    .showcase-carousel {
+                        border-bottom: 2px solid white;
+                    }
                 }
             }
         }

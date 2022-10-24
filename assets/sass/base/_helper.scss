@@ -12,18 +12,22 @@
 .flex-column {
     flex-direction: column;
 }
+.flex-row {
+    flex-direction: row;
+}
 .grid {
     display: grid;
     align-items: center;
 }
 
 .sec-title {
-    font-size: u.rem(75);
+    font-size: u.rem(100);
     color: var(--textTitleColor);
     text-shadow: var(--textTitlehadow);
     font-family: 'PyeongChangPeace-Bold';
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--textTitleBorder);
+    text-transform: uppercase;
 
     &.withLight {
         position: relative;
@@ -38,12 +42,39 @@
             content: '';
             position: absolute;
             border-radius: 100%;
+
+            box-shadow: var(--textColorWhite) 0px -15px 50px 5px;
         }
         &::before {
-            left: -70px;
+            left: -100px;
         }
         &::after {
-            right: -70px;
+            right: -100px;
         }
     }
+
+    &.special {
+        position: absolute;
+        font-size: 125px;
+        z-index: 2;
+        
+        top: 200px;
+        margin-left: -800px;
+
+    }
+}
+
+.wrapper-cont {
+    max-width: 1600px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    //border: 1px solid red;
+}
+.wrapper-cont-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    //border: 1px solid red;
 }

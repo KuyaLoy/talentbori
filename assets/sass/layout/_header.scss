@@ -1,4 +1,36 @@
 .talentbori__header {
     min-height: 100vh;
-    justify-content: center;
+    cursor: pointer;
+
+    picture {
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transition: .3s ease-in-out;
+
+            &.headerImg {
+                opacity: 1;
+            }
+            &.headerImgHover {
+                opacity: 0;
+            }
+        }
+        
+    }
+
+    &:hover {
+        picture {
+            .headerImgHover {
+                opacity: 1;
+            }
+        }
+    }
 }
