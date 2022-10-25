@@ -1,11 +1,23 @@
+@use '../utils' as u;
+
 .talentbori__header {
     min-height: 100vh;
     cursor: pointer;
 
+    @media(max-width: u.rem(1300)) {
+        min-height: u.rem(500);
+    }
+
+    @media(max-width: u.rem(800)) {
+        min-height: u.rem(300);
+    }
+    @media(max-width: u.rem(669)) {
+        min-height: u.rem(200);
+    }
     picture {
 
         img {
-            object-fit: cover;
+            object-fit: cover; 
             width: 100%;
             height: auto;
 
@@ -20,7 +32,7 @@
                 opacity: 1;
             }
             &.headerImgHover {
-                opacity: 0;
+                opacity: 0; 
             }
         }
         

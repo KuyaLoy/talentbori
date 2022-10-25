@@ -44,25 +44,112 @@
             border-radius: 100%;
 
             box-shadow: var(--textColorWhite) 0px -15px 50px 5px;
+
+            @media(max-width: u.rem(550)) {
+                height: u.rem(30);
+                width: u.rem(30);
+                box-shadow: var(--textColorWhite) 0px -5px 30px 5px;
+            }
         }
         &::before {
-            left: -100px;
+            left: u.rem(-100);
+            @media(max-width: u.rem(550)) {
+                left: u.rem(-75);
+            }
         }
         &::after {
-            right: -100px;
+            right:   u.rem(-100);
+
+            @media(max-width: u.rem(550)) {
+                right: u.rem(-75);
+            }
         }
     }
 
     &.special {
         position: absolute;
-        font-size: 125px;
+        font-size: u.rem(125);
         z-index: 2;
         
-        top: 200px;
-        margin-left: -800px;
+        top: u.rem(200);
+        margin-left: u.rem(-800);
 
+        @media(max-width: u.rem(1300)) {
+            font-size: u.rem(100);
+            margin-left: u.rem(-700);
+        }
+
+        @media(max-width: u.rem(1050)) {
+            font-size: u.rem(85);
+            margin-left: u.rem(-580);
+            top: u.rem(190);
+        }
+
+        @media(max-width: u.rem(800)) {
+            all: unset;
+
+            font-size: u.rem(70);
+            color: var(--textTitleColor);
+            text-shadow: var(--textTitlehadow);
+            font-family: 'PyeongChangPeace-Bold';
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--textTitleBorder);
+            text-transform: uppercase;
+
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before , &::after {
+                height: 50px;
+                width: 50px;
+                background: white;
+                content: '';
+                position: absolute;
+                border-radius: 100%;
+
+                box-shadow: var(--textColorWhite) 0px -15px 50px 5px; @media(max-width: u.rem(550)) {
+                    height: u.rem(30);
+                    width: u.rem(30);
+                    box-shadow: var(--textColorWhite) 0px -5px 30px 5px;
+                }
+            }
+            &::before {
+                left: u.rem(-100);
+                @media(max-width: u.rem(550)) {
+                    left: u.rem(-75);
+                }
+            }
+            &::after {
+                right:   u.rem(-100);
+    
+                @media(max-width: u.rem(550)) {
+                    right: u.rem(-75);
+                }
+            }
+            @media(max-width: u.rem(669)) {
+                font-size: u.rem(60);
+            }
+
+        }
+
+    } 
+
+    @media(max-width: u.rem(1300)) {
+        font-size: u.rem(70);
     }
-}
+
+    @media(max-width: u.rem(669)) {
+        font-size: u.rem(60);
+    }
+
+    @media(max-width: u.rem(500)) {
+        font-size: u.rem(50);
+    }
+
+}   
+
 
 .wrapper-cont {
     max-width: 1600px;

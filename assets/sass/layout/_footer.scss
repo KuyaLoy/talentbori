@@ -11,6 +11,10 @@ footer {
     background-repeat: no-repeat;
     background-position: 100% 95%;
 
+    @media(max-width: u.rem(1300)) {
+        background-size: cover;
+    }
+
 
     .copyright-marquee {
         position: relative;
