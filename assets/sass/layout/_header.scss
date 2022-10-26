@@ -14,6 +14,12 @@
     @media(max-width: u.rem(669)) {
         min-height: u.rem(200);
     }
+    @media(max-width: u.rem(550)) {
+        min-height: u.rem(150);
+    }
+    @media(max-width: u.rem(475)) {
+        min-height: u.rem(50);
+    }
     picture {
 
         img {

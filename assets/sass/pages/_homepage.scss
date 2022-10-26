@@ -11,6 +11,11 @@
     }
 
     main {
+
+        @media(max-width: u.rem(500)) {
+            
+        overflow: hidden;
+        }
         section {
             
             
@@ -205,6 +210,9 @@
                                     @media(max-width: u.rem(669)) {
                                         width: u.rem(300);
                                     }
+                                    @media(max-width: u.rem(525)) {
+                                        width: u.rem(275);
+                                    }
                                 }
 
                                 @media(max-width: u.rem(1300)) {
@@ -214,6 +222,10 @@
                                 @media(max-width: u.rem(800)) {
                                     top: u.rem(225);
                                     margin-left:  u.rem(-250);
+                                }
+                                @media(max-width: u.rem(525)) {
+                                    top: u.rem(225);
+                                    margin-left:  u.rem(-275);
                                 }
                             }
                             &.mirror { 
@@ -232,6 +244,9 @@
                                     @media(max-width: u.rem(669)) {
                                         width: u.rem(350);
                                     }
+                                    @media(max-width: u.rem(525)) {
+                                        width: u.rem(325);
+                                    }
                                 }
                                 @media(max-width: u.rem(1399)) {
                                     margin-right:  u.rem(-300);
@@ -247,6 +262,10 @@
 
                                 @media(max-width: u.rem(669)) {
                                     margin-right:  u.rem(-200);
+                                }
+
+                                @media(max-width: u.rem(525)) {
+                                    margin-right:  u.rem(-175);
                                 }
                             
                                 lottie-player {
@@ -278,6 +297,11 @@
                                         height: u.rem(425) !important;
                                         top: u.rem(70); 
                                         right: u.rem(45);
+                                    }
+                                    @media(max-width: u.rem(525)) {
+                                        width: u.rem(255) !important;
+                                        height: u.rem(395) !important;
+                                        top: u.rem(65); 
                                     }
                                 }
                             }
@@ -566,6 +590,11 @@
                                 @media(max-width: u.rem(575)) {
                                     font-size: u.rem(50);
                                 }
+
+                                @media(max-width: u.rem(500)) {
+                                    font-size: u.rem(40);
+                                    padding: u.rem(20) u.rem(40);
+                                }
                                 
                                 &:hover {
                                     //box-shadow: #000 -20px 20px 0px;
@@ -589,10 +618,7 @@
                     .showcase-carousel {
                         border-bottom: 2px solid white;
                     }
-
-                    @media(max-width: u.rem(800)) {
-                        padding: 0;
-                    }
+                    padding: 0;
                 }
             }
         }

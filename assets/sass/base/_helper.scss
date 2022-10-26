@@ -131,6 +131,9 @@
             @media(max-width: u.rem(669)) {
                 font-size: u.rem(60);
             }
+            @media(max-width: u.rem(550)) {
+                font-size: u.rem(50);
+            }
 
         }
 
@@ -144,7 +147,7 @@
         font-size: u.rem(60);
     }
 
-    @media(max-width: u.rem(500)) {
+    @media(max-width: u.rem(550)) {
         font-size: u.rem(50);
     }
 
