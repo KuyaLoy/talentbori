@@ -21,7 +21,7 @@
 }
 
 .sec-title {
-    font-size: u.rem(100);
+    font-size: u.rem(75);
     color: var(--textTitleColor);
     text-shadow: var(--textTitlehadow);
     font-family: 'PyeongChangPeace-Bold';
@@ -52,31 +52,31 @@
             }
         }
         &::before {
-            left: u.rem(-100);
+            left: u.rem(-90);
             @media(max-width: u.rem(550)) {
-                left: u.rem(-75);
+                left: u.rem(-50);
             }
         }
         &::after {
-            right:   u.rem(-100);
+            right:   u.rem(-90);
 
             @media(max-width: u.rem(550)) {
-                right: u.rem(-75);
+                right: u.rem(-50);
             }
         }
     }
 
     &.special {
         position: absolute;
-        font-size: u.rem(125);
+        font-size: u.rem(100);
         z-index: 2;
         
-        top: u.rem(200);
-        margin-left: u.rem(-800);
+        top: u.rem(220);
+        margin-left: u.rem(-760);
 
         @media(max-width: u.rem(1300)) {
-            font-size: u.rem(100);
-            margin-left: u.rem(-700);
+            font-size: u.rem(75);
+            margin-left: u.rem(-600);
         }
 
         @media(max-width: u.rem(1050)) {
@@ -140,7 +140,7 @@
     } 
 
     @media(max-width: u.rem(1300)) {
-        font-size: u.rem(70);
+        font-size: u.rem(65);
     }
 
     @media(max-width: u.rem(669)) {
