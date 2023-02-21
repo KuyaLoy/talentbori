@@ -34,6 +34,11 @@
                 &.prolog {
                     padding: u.rem(50) u.rem(20);
                     min-height: 100vh;
+
+                    @media(max-width: u.rem(500)) {
+                        margin-top: u.rem(105);
+                    }
+
                     p {
                         font-size: u.rem(60);
                         width: 100%;
@@ -55,6 +60,12 @@
                             width: 100%;
                             line-height: u.rem(70);
                         }
+                        @media(max-width: u.rem(500)) {
+                            font-size: u.rem(36);
+                            width: 100%;
+                            line-height: u.rem(50);
+                            margin-top: u.rem(50);
+                        }
                     }
                     picture {
                         mix-blend-mode: overlay;
@@ -74,6 +85,10 @@
                                 height: u.rem(400);
                                 width: u.rem(400);
                             }
+                            @media(max-width: u.rem(500)) {
+                                height: u.rem(200); 
+                                width: u.rem(200);
+                            }
                         }
 
                         @media(max-width: u.rem(1300)) {
@@ -88,6 +103,10 @@
                         @media(max-width: u.rem(800)) {
                             top: u.rem(125);
                         }
+                        @media(max-width: u.rem(500)) {
+                            top: u.rem(100);
+                            left: u.rem(-20);
+                        }
                         
                     }
 
@@ -99,13 +118,21 @@
                         img {
                             @media(max-width: u.rem(1300)) {
                                 height: u.rem(350);
-                                width: u.rem(350);
+                                width: u.rem(350); 
                             }
                             @media(max-width: u.rem(1050)) {
                                 height: u.rem(280);
                                 width: u.rem(280);
                             }
+                            @media(max-width: u.rem(1050)) {
+                                height: u.rem(200);
+                                width: u.rem(200);
+                            }
                         }
+                    }
+
+                    @media (max-width: u.rem(500)) {
+                        min-height: unset;
                     }
 
                 }
@@ -169,6 +196,12 @@
                                 height: u.rem(400);
                                 object-fit: contain;
                             }
+
+                            
+                            @media(max-width: u.rem(450)) {
+                                width: u.rem(250);
+                                height: u.rem(250);
+                            }
                         }
                     }
 
@@ -225,9 +258,6 @@
                                     @media(max-width: u.rem(525)) {
                                         width: u.rem(300);
                                     }
-                                    @media(max-width: u.rem(475)) {
-                                        width: u.rem(275);
-                                    }
 
                                     @media(max-width: u.rem(475)) {
                                         width: u.rem(250);
@@ -250,9 +280,12 @@
                                     margin-left:  u.rem(-200);
                                 }
 
-                                @media(max-width: u.rem(450)) {
+                                @media(max-width: u.rem(475)) {
                                     margin-left:  u.rem(-150);
                                     top: u.rem(135);
+                                }
+                                @media(max-width: u.rem(400)) {
+                                    margin-left:  u.rem(-130);
                                 }
                             }
                             &.mirror { 
@@ -278,10 +311,10 @@
                                         width: u.rem(325);
                                      }
 
+                                    //  @media(max-width: u.rem(475)) {
+                                    //     width: u.rem(300);
+                                    //  }
                                      @media(max-width: u.rem(475)) {
-                                        width: u.rem(300);
-                                     }
-                                     @media(max-width: u.rem(450)) {
                                         width: u.rem(250);
                                      }
                                 }
@@ -309,8 +342,11 @@
                                     margin-top: u.rem(150);
                                 }
 
-                                @media(max-width: u.rem(450)) {
+                                @media(max-width: u.rem(475)) {
                                     margin-right:  u.rem(-110);
+                                }
+                                @media(max-width: u.rem(475)) {
+                                    margin-right:  u.rem(-50);
                                 }
                             
                                 lottie-player {
@@ -347,12 +383,12 @@
                                         top: u.rem(-10); 
                                     }
                                     
+                                    // @media(max-width: u.rem(475)) {
+                                    //     width: u.rem(250) !important;
+                                    //     right: u.rem(-5);
+                                    //     height: u.rem(375) !important;
+                                    // }
                                     @media(max-width: u.rem(475)) {
-                                        width: u.rem(250) !important;
-                                        right: u.rem(-5);
-                                        height: u.rem(375) !important;
-                                    }
-                                    @media(max-width: u.rem(450)) {
                                         width: u.rem(210) !important;
                                         right: u.rem(-10);
                                         height: u.rem(315) !important;
@@ -364,7 +400,6 @@
                         }
                     }
                 }
-
                 &.roadmap {
                     .roadmap-cont {
                         &.web {
@@ -577,7 +612,6 @@
                         }
                     }
                 }
-
                 &.buy {
                     
                     min-height: 100vh;
@@ -650,6 +684,13 @@
                                     font-size: u.rem(40);
                                     padding: u.rem(20) u.rem(40);
                                 }
+
+                                @media(max-width: u.rem(400)) {
+                                    font-size: u.rem(35);
+                                    padding: u.rem(20) u.rem(40);
+                                    margin-right: -20px;
+                                }
+                                
                                 
                                 &:hover {
                                     //box-shadow: #000 -20px 20px 0px;
@@ -668,7 +709,6 @@
                         }
                     }
                 }
-
                 &.showcase {
                     .showcase-carousel {
                         border-bottom: 2px solid white;

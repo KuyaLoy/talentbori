@@ -78,3 +78,8 @@ function hoverOutContImage(imageShow) {
   $(' img[class*="pic1-"]').hide();
   
 }
+
+function navToggle(x) {
+  x.classList.toggle("change");
+  $('.icon-bar').toggle("active");
+}

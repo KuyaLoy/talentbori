@@ -46,8 +46,8 @@
             box-shadow: var(--textColorWhite) 0px -15px 50px 5px;
 
             @media(max-width: u.rem(550)) {
-                height: u.rem(30);
-                width: u.rem(30);
+                height: u.rem(25);
+                width: u.rem(25);
                 box-shadow: var(--textColorWhite) 0px -5px 30px 5px;
             }
         }
@@ -136,7 +136,9 @@
             }
 
         }
-
+        @media(max-width: u.rem(500)) {
+            font-size: u.rem(35);
+        }
     } 
 
     @media(max-width: u.rem(1300)) {
@@ -149,6 +151,9 @@
 
     @media(max-width: u.rem(550)) {
         font-size: u.rem(50);
+    }
+    @media(max-width: u.rem(500)) {
+        font-size: u.rem(35);
     }
 
 }   

@@ -8,10 +8,16 @@
 
   <title>Talentbori | Homepage</title>
 
+  <link rel="shortcut icon" href="./assets/image/nav/nav1.png" />
+  <link rel="apple-touch-icon-precomposed" href="" />
+  <link rel="apple-touch-icon-precomposed" sizes="96x96" href="./assets/image/nav/nav1.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/image/nav/nav1.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="./assets/image/nav/nav1.png" />
+
   <link rel="stylesheet" href="./assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
-  <link rel="stylesheet" href="./assets/css/style.css?v=1" />
+  <link rel="stylesheet" href="./assets/css/style.css?v=1.1" />
 </head>
 
 <body id="Home">
@@ -24,6 +30,7 @@
       <img src="./assets/image/header/header.png" alt="talentbori image" class="headerImg">
       <img src="./assets/image/header/header-hover.png" alt="talentbori image" class="headerImgHover">
     </picture>
+
   </header>
 
 
@@ -248,7 +255,7 @@
         <div class="wrapper-cont-fluid flex flex-column buy-cont">
           <h3>A Collection Of 10,000 NFT</h3>
           <div class="test">
-            <a href="#!">TALENTBORI</a>
+            <a href="https://strmnft.com/collection/nft/140324" target="_blank">TALENTBORI</a>
           </div>
         </div>
       </article>
@@ -301,6 +308,14 @@
 
 
   <div class="extra-button-cont">
+    
+
+    <div class="container-con" onclick="navToggle(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
     <div class="icon-bar">
       <a href="#Home">
         <picture><img src="./assets/image/nav/nav1.png" alt="HOME" /></picture>
@@ -338,16 +353,16 @@
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="./assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js?ver=1"></script>
 
 
   <script>
     $(document).ready(function(){
-      $(".showcase-carousel").owlCarousel({
+      $(".showcase-carousel").owlCarousel({ 
         rtl: true,
         loop: true,
         autoplay: true,
-        slideTransition: 'linear',
+        slideTransition: 'linear', 
         autoplayTimeout: 3000,
         autoplaySpeed: 3000,
         autoplayHoverPause: false,
